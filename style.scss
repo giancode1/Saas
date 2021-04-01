@@ -1,0 +1,52 @@
+/* #hola p{
+    color: rgb(255, 81, 0);
+}
+#hola span{
+    color: rebeccapurple;
+}
+#hola div p{
+    color: green;
+}
+ */
+ //soy un comentario en scss
+ /*este comentario si pasa al css*/
+@import "colores";
+@import "mixin";
+
+$cabeceraColor:#2979ff ;
+$cabeceraFondo: #fff59d ;
+h1{
+    color: $cabeceraColor;
+    background-color: $cabeceraFondo;
+}
+#hola{
+    p{
+        color:rgb(255, 81, 0);
+    }
+    span{
+        color: rebeccapurple;
+    }
+     /* div p{        //tambn lo entiende asi
+        color:green;
+     } */
+    div{
+        color: gold;
+        p{
+            color:green;
+        }
+    }
+}
+#colores{
+    p{
+        color: $color1;
+        border-style: solid;
+        border-color: $color2;
+    }
+}
+section{
+    @extend h1;       //hereda de h1, si fuera de una clase seria @extend .clase  //aunque tambne stab lo de mixin.include que parece ser lo mismo
+    border-radius: 30px;
+    text-align: center;
+    border-style: dashed;
+    margin: 8px;
+}

@@ -1,0 +1,12 @@
+npm -g install sass
+sass --version
+sass --watch style.scss style.css
+
+
+//por medio de rutas (carpetas):
+sass --watch rutaSass:rutaCss
+
+
+
+//modificando bootstrap
+sass --watch scss:dist/css

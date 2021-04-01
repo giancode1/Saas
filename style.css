@@ -1,0 +1,227 @@
+/* #hola p{
+    color: rgb(255, 81, 0);
+}
+#hola span{
+    color: rebeccapurple;
+}
+#hola div p{
+    color: green;
+}
+ */
+/*este comentario si pasa al css*/
+#rect1 {
+  border: dotted;
+  background-color: #ffd180;
+  margin: 8px;
+  width: 120px;
+  height: 80px;
+}
+
+#rect2 {
+  border: dotted;
+  background-color: #ffd180;
+  margin: 8px;
+  width: 120px;
+  height: 80px;
+  background-color: #a7ffeb;
+}
+
+#rect3 {
+  border: dotted;
+  background-color: #ffd180;
+  margin: 8px;
+  width: 120px;
+  height: 80px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+#cuad1 {
+  background-color: gold;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad2 {
+  background-color: #01579b;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad3 {
+  background-color: red;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad4 {
+  background-color: green;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: groove;
+}
+
+#cuad5 {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: double;
+}
+
+#cuad6 {
+  background-color: #4dd0e1;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad7 {
+  background-color: #e040fb;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad8 {
+  background-color: grey;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad9 {
+  background-color: grey;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad10 {
+  background-color: grey;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuad11 {
+  background-color: grey;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuadd1 {
+  background-color: #333;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuadd2 {
+  background-color: #e040fb;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuadd3 {
+  background-color: #b71c1c;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#cuadd4 {
+  background-color: grey;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid;
+}
+
+#alternado1 {
+  background-color: green;
+  width: 120px;
+  height: 80px;
+}
+
+#alternado2 {
+  background-color: red;
+  width: 120px;
+  height: 80px;
+}
+
+#alternado3 {
+  background-color: green;
+  width: 120px;
+  height: 80px;
+}
+
+#alternado4 {
+  background-color: red;
+  width: 120px;
+  height: 80px;
+}
+
+#alternado5 {
+  background-color: green;
+  width: 120px;
+  height: 80px;
+}
+
+h1, section {
+  color: #2979ff;
+  background-color: #fff59d;
+}
+
+#hola {
+  /* div p{        //tambn lo entiende asi
+     color:green;
+  } */
+}
+#hola p {
+  color: #ff5100;
+}
+#hola span {
+  color: rebeccapurple;
+}
+#hola div {
+  color: gold;
+}
+#hola div p {
+  color: green;
+}
+
+#colores p {
+  color: #01579b;
+  border-style: solid;
+  border-color: #ffd180;
+}
+
+section {
+  border-radius: 30px;
+  text-align: center;
+  border-style: dashed;
+  margin: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

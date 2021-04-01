@@ -1,0 +1,89 @@
+@mixin forma{
+    border: dotted;
+    background-color: $color2;
+    margin: 8px;
+    width: 120px;
+    height: 80px;
+}
+#rect1{
+    @include forma;
+}
+#rect2{
+    @include forma;
+    background-color: $color3;  //si quiero cambiar el color de un rectangulo aplica mejor lo de abajo
+}
+#rect3{
+    @include forma;
+}
+//cuadrados:
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+@mixin forma2($color:$color1 ,$v_borde:solid ){ //asigna color1 por defecto si no asigno color determinado
+    //estas variables: $color , $v_borde  solo viven aqui en el scope interno
+    background-color: $color ;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    border: $v_borde;
+}
+#cuad1{
+    @include forma2(gold);
+}
+#cuad2{
+    @include forma2();
+}
+#cuad3{
+    @include forma2(red);
+}
+#cuad4{
+    @include forma2(green,groove);
+}
+#cuad5{
+    @include forma2(null,double);
+}
+$colorsito: #4dd0e1;
+#cuad6{
+    @include forma2($colorsito);
+}
+//lista 
+//las listas de sass comienzan en 1 no en 0
+$colorList: (#333,#e040fb,#b71c1c,grey);
+
+#cuad7{
+    @include forma2(nth($colorList,2));
+}
+//for con sass
+@for $i from 8 through 11 {  //tambn vale: to , el throuhg contien el numero extremo:11 , to: no
+    #cuad#{$i}{
+        @include forma2(grey);
+    }
+} 
+@debug "tamanio del colorList:" + length($colorList);  //me enseña en mi terminal, puedo hacer debug
+//each
+@each $color in $colorList {
+    $i:index($colorList , $color );
+    
+    #cuadd#{$i}{
+        @include forma2($color);
+    }
+}
+
+//if else
+@mixin forma3 ($color){
+    background-color: $color;
+    width: 120px;
+    height: 80px;
+}
+@for $i from 1 to 6 {
+    @if($i%2==0){
+        #alternado#{$i}{
+            @include forma3(red);
+        }
+    }@else{
+        #alternado#{$i}{
+            @include forma3(green);
+        }
+    }
+}
